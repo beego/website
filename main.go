@@ -1,0 +1,11 @@
+package main
+
+import (
+	"github.com/astaxie/beego"
+	_ "github.com/beego/website/routers"
+)
+
+func main() {
+	beego.SetStaticPath("/static", "static")
+	beego.Run()
+}
