@@ -23,7 +23,7 @@ func (bc *BaseController) Prepare() {
 	if bc.Lang = bc.Ctx.GetCookie("lang"); bc.Lang == "" {
 		bc.Lang = "en-Us"
 	}
-	bc.cacheFile = path.Join(beego.AppConfig.String("cache_dir"), bc.Lang, bc.Ctx.Input.URL())
+	bc.cacheFile = path.Join(beego.AppConfig.DefaultString("cache_dir","_cache"), bc.Lang, bc.Ctx.Input.URL())
 	if !strings.HasSuffix(bc.cacheFile, ".html") {
 		bc.cacheFile += ".html"
 	}
