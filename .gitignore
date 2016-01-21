@@ -8,7 +8,7 @@
 _obj
 _test
 _cache
-doc
+beedoc
 
 # Architecture specific extensions/prefixes
 *.[568vq]
