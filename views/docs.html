@@ -1,4 +1,253 @@
-<h1>this is document: {{.DocFile}}</h1>
-<div id="doc-content">
-    {{.DocContent}}
+{{template "header"}}
+<div class="main-wrapper">
+  <aside class="aside-container">
+    <ul>
+      <li class="">
+        <a href="introduce" class="">
+          Beego of Go
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li class="current">
+        <a href="getting-started" class="">
+          快速上手
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="install" class="">
+          安装
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="upgrade-notes" class="">
+          升级指南
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="../../changelog" class="">
+          更新日志
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li open="open">
+        <h4>快速入门</h4>
+        <ul class="">
+          <li class="">
+            <a href="#" class="">
+              新建项目
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              路由设置
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              Controller运行机制
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              Model逻辑
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              View编写
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              静态文件处理
+            </a>
+          </li>
+        </ul>
+        <h4>Beego的MVC架构</h4>
+        <ul class="">
+          <li class="type-divider">Controller设计</li>
+          <li class="">
+            <a href="#" class="">
+              参数配置
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              路由设置
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              控制器函数
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              XSRF过滤
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              请求数据处理
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              Session控制
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              过滤器
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              Flash数据
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              Url构建
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              多种格式数据输出
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              表单数据验证
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              错误处理
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              日志处理
+            </a>
+          </li>
+          <li class="type-divider">Model设计</li>
+          <li class="">
+            <a href="#" class="">
+              概述
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              ORM使用
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              CRUD操作
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              高级查询
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              原生SQL查询
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              构造查询
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              事务处理
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              模型定义
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              命令模式
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              测试用例
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              自定义字段
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              FAQ
+            </a>
+          </li>
+          <li class="type-divider">View设计</li>
+          <li class="">
+            <a href="#" class="">
+              模板语法指南
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              模板处理
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              模板函数
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              静态文件处理
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="">
+              模板分页处理
+            </a>
+          </li>
+        </ul>
+        <h4>Beego的模块设计</h4>
+        <ul class="">
+          <li class="">
+            <a href="#" class="">
+                Session模块
+              </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <section class="main-container">
+    <article class="markdown">
+      <div id="doc-content">
+          {{.DocContent}}
+      </div>
+    </article>
+    <div class="prev-next-nav"><span class="prev-page"></span><a class="next-page" href="#">
+          快速上手
+          <span class="chinese"></span>
+        </a></div>
+  </section>
+
 </div>
+
+{{template "footer"}}
+</div>
+<!--/.container-->
