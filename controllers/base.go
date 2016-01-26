@@ -35,6 +35,7 @@ func (bc *BaseController) Prepare() {
 
 	bc.Layout = "layout.html"
 	bc.setProperTemplateFile()
+	bc.Data["Title"] = "Beego Website"
 }
 
 func (bc *BaseController) setProperTemplateFile() {
