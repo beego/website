@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/astaxie/beego"
+	"github.com/beego/website/models"
 )
 
 type BaseController struct {
@@ -35,7 +36,11 @@ func (bc *BaseController) Prepare() {
 
 	bc.Layout = "layout.html"
 	bc.setProperTemplateFile()
+
 	bc.Data["Title"] = "Beego Website"
+	bc.Data["Lang"] = bc.Lang
+	bc.Data["HomeNav"] = models.HomeNav
+	bc.Data["DocNav"] = models.DocNav
 }
 
 func (bc *BaseController) setProperTemplateFile() {

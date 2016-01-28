@@ -5,7 +5,7 @@ import (
 	"github.com/beego/website/controllers"
 )
 
-func init() {
+func Init() {
 	beego.Router("/", new(controllers.IndexController))
 	beego.Router("/*", new(controllers.MainController))
 	beego.Router("/docs", new(controllers.DocController))

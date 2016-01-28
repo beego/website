@@ -5,5 +5,5 @@ type MainController struct {
 }
 
 func (mc *MainController) Get() {
-
+	mc.Layout = ""
 }
