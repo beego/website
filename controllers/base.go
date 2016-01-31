@@ -25,6 +25,9 @@ func (bc *BaseController) Prepare() {
 	if bc.Lang = bc.Ctx.GetCookie("lang"); bc.Lang == "" {
 		bc.Lang = "en-Us"
 	}
+	bc.Data["Lang"] = bc.Lang
+	bc.Data["I18n"] = models.I18ns[strings.ToLower(bc.Lang)]
+
 	bc.cacheFile = path.Join(beego.AppConfig.DefaultString("cache_dir", "_cache"), bc.Lang, bc.Ctx.Input.URL())
 	if !strings.HasSuffix(bc.cacheFile, ".html") {
 		bc.cacheFile += ".html"
@@ -38,7 +41,6 @@ func (bc *BaseController) Prepare() {
 	bc.setProperTemplateFile()
 
 	bc.Data["Title"] = "Beego Website"
-	bc.Data["Lang"] = bc.Lang
 	bc.Data["HomeNav"] = models.HomeNav
 	bc.Data["DocNav"] = models.DocNav
 }

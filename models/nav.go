@@ -1,48 +1,63 @@
 package models
 
 import (
-	"github.com/fuxiaohei/beego/config"
 	"sort"
 	"strconv"
 	"strings"
+
+	"github.com/astaxie/beego/config"
 )
 
 var (
+	// HomeNav is navigation for all pages
 	HomeNav NavGroup
-	DocNav  NavGroup
+	// DocNav is navigation for documentation pages
+	DocNav NavGroup
 )
 
-func Init() {
-	iniFile, err := config.NewConfig("ini", "conf/nav.ini")
-	if err != nil {
-		panic(err)
-	}
+// ReadNav read navigation data
+func ReadNav(iniFile config.Configer) {
 	homeNav, _ := iniFile.GetSection("nav")
 	docNav, _ := iniFile.GetSection("doc-nav")
-	HomeNav = loadNav(homeNav)
-	DocNav = loadNav(docNav)
+	HomeNav = loadNav(homeNav, "nav")
+	DocNav = loadNav(docNav, "doc-nav")
 }
 
 type (
+	// Nav is item of navigation
 	Nav struct {
-		Order    int
-		Key      string
-		URL      string
-		Children []*Nav
+		Order      int
+		Key        string
+		URL        string
+		Children   []*Nav
+		i18nPrefix string
 	}
+	// NavGroup is group as navigation
 	NavGroup []*Nav
 )
 
-func newNav(key, url string) *Nav {
+func newNav(key, url, i18n string) *Nav {
 	keyData := strings.Split(key, "-")
 	order, _ := strconv.Atoi(keyData[len(keyData)-1])
 	return &Nav{
-		Order: order,
-		Key:   key,
-		URL:   url,
+		Order:      order,
+		Key:        key,
+		URL:        url,
+		i18nPrefix: i18n,
 	}
 }
 
+// I18n return the i18n key of this navigation item
+func (n *Nav) I18n() string {
+	return n.i18nPrefix + "::" + n.Key // in beego ini config, it support getting key in section by "section::key"
+}
+
+// IsURL return whether the link is in url, or just separator
+func (n *Nav) IsURL() bool {
+	return n.URL != "#"
+}
+
+// Find find navigation in group by key string
 func (ng NavGroup) Find(key string) *Nav {
 	for _, n := range ng {
 		if n.Key == key {
@@ -52,10 +67,10 @@ func (ng NavGroup) Find(key string) *Nav {
 	return nil
 }
 
-func loadNav(m map[string]string) NavGroup {
+func loadNav(m map[string]string, i18nPrefix string) NavGroup {
 	var navData NavGroup
 	for k, v := range m {
-		navData = append(navData, newNav(k, v))
+		navData = append(navData, newNav(k, v, i18nPrefix))
 	}
 
 	sort.Sort(keyLengthNavSlice(navData))

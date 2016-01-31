@@ -13,27 +13,11 @@
   <nav class="nav" style="display: block;">
     <span class="bar"></span>
     <ul>
-      <li class="">
-        <a href="#">首页</a>
-      </li>
-      <li class="">
-        <a href="#">快速入门</a>
-      </li>
-      <li class="current">
-        <a href="#">开发文档</a>
-      </li>
-      <li class="">
-        <a href="#">开发者社区</a>
-      </li>
+      {{range .HomeNav}}
       <li>
-        <a href="#">视频教程</a>
+        <a href="{{.URL}}" class="{{.I18n}}">{{$.I18n.Tr .I18n}}</a>
       </li>
-      <li class="">
-        <a href="#">产品案例</a>
-      </li>
-      <li class="">
-        <a href="#">官方博客</a>
-      </li>
+      {{end}}
     </ul>
   </nav>
   <div class="nav-phone-icon"></div>
