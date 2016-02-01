@@ -23,7 +23,7 @@ type BaseController struct {
 
 func (bc *BaseController) Prepare() {
 	if bc.Lang = bc.Ctx.GetCookie("lang"); bc.Lang == "" {
-		bc.Lang = "en-Us"
+		bc.Lang = "en-US"
 	}
 	bc.Data["Lang"] = bc.Lang
 	bc.Data["I18n"] = models.I18ns[strings.ToLower(bc.Lang)]
