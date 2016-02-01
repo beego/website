@@ -1,7 +1,7 @@
 {{define "header"}}
 <header id="header" class="clearfix">
   <div class="tips-container">
-    <a class="tips" href="#"><span>1.6.0</span>已发布，<span>1.6.0文档</span>已更新</a>
+    <a class="tips" href="#"><span>1.6.0</span> Released，<span>1.6.0 Document</span> has been updated</a>
   </div>
 
   <a class="logo" href="#">

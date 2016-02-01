@@ -725,6 +725,42 @@ pre code.go {
   background: #2DB7F5;
   color: #FFF;
 }
+.footloose-container {
+  margin-left: 0;
+  padding: 0 40px 120px;
+  background: #fff;
+  min-height: 500px;
+  overflow: hidden;
+}
+.footloose-container-describe {
+  font-size: 14px;
+  margin-bottom: 20px;
+  background: #fbfbfb;
+  padding: 6px;
+  border-radius: 6px;
+}
+.block-text-align-left {
+  text-align: left;
+}
+.option-chooser-blocks {
+	position: relative;
+	margin-left: -8px;
+}
+.option-chooser-blocks li {
+	list-style-type: none;
+	display: block;
+	float: left;
+	height: 115px;
+	width: 115px;
+	background-color: #eaeaea;
+	border: 2px solid #b0c0bf;
+	margin: 6px;
+	text-align: center;
+	padding: 5px;
+}
+.option-chooser-blocks a {
+  color: black;
+}
 /* responsive style */
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
@@ -798,5 +834,8 @@ pre code.go {
     color: #666;
     font-size: 14px;
     line-height: 1.8;
+  }
+  .footloose-container {
+    margin-left: 0;
   }
 }

@@ -11,21 +11,25 @@
     </li>
     <li>
       <h2>我们</h2>
-      <a target="_blank" href="http://beego.me/blog">官方博客 - Beego</a>
-      <a target="_blank" href="">反馈和建议</a>
-      <a target="_blank" href="">讨论</a>
-      <a target="_blank" href="">报告 Bug</a>
+      <a target="_blank" href="/blog">官方博客 - Beego</a>
+      <a target="_blank" href="#">反馈和建议</a>
+      <a target="_blank" href="#">讨论</a>
+      <a target="_blank" href="#">报告 Bug</a>
     </li>
     <li>
       <h2>其他</h2>
-      <a target="_blank" href="">捐赠</a>
+      {{if eq .Lang "zh-CN"}}
+      <a target="_blank" href="/donate">捐赠我们</a>
+      {{end}}
+      {{if eq .Lang "en-US"}}
+      <a target="_blank" href="/donate"> Donate Us</a>
+      {{end}}
       <div class="dropup choose-lang-container">
         <button class="btn dropdown-toggle choose-lang" type="button" id="choose-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Language:English <i class="caret"></i>
         </button>
         <div class="dropdown-menu choose-lang-menu" aria-labelledby="choose-language">
-          <a class="dropdown-item choose-lang-item" href="#">简体中文</a>
-          <a class="dropdown-item choose-lang-item" href="#">Russian</a>
+          <a class="dropdown-item choose-lang-item" href="">简体中文</a>
         </div>
       </div>
 
