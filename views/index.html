@@ -102,7 +102,28 @@
   </div>
 </div>
 <hr>
-{{template "header" .}}
+
+<header id="header" class="clearfix">
+  <div class="tips-container">
+    <a class="tips" href="#"><span>1.6.0</span> Released，<span>1.6.0 Document</span> has been updated</a>
+  </div>
+
+  <nav class="nav" style="display: block;">
+    <span class="bar"></span>
+    <div class="row">
+      <div style="margin: 0 auto;">
+    <ul>
+      {{range .HomeNav}}
+      <li>
+        <a href="{{.URL}}" class="{{.I18n}}">{{$.I18n.Tr .I18n}}</a>
+      </li>
+      {{end}}
+    </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-phone-icon"></div>
+</header>
 
 <div class="feature-container">
   <div class="row">
@@ -166,8 +187,6 @@
 </div>
 
 <div class="users-container">
-  <br>
-  <hr>
   <div class="row">
     <div class="col-md-12">
       <h2 class="stick-container-slogan">Beego's 用户</h2>
