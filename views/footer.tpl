@@ -44,6 +44,7 @@
   <script src='/static/js/jquery-2.1.4.min.js'></script>
   <script src='/static/js/tether.min.js'></script>
   <script src='/static/js/bootstrap.min.js'></script>
+  <script src='/static/js/main.js'></script>
   <!-- for github -->
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 </footer>

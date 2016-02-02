@@ -650,20 +650,55 @@ pre code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 524px;
+  height: 678px;
   text-align: center;
   overflow: hide;
-  background-color: #FEBF02;
+  background-color: #FFF;
 }
 .stick-container-logo {
   margin: 0 auto;
 }
+.stick-container-title {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 0.67em;
+  margin-bottom: 11px;
+  font-size: 72px;
+  letter-spacing: .15em;
+  font-weight: 100;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  line-height: 1;
+}
 .stick-container-slogan {
-  color: #FFF;
-  font-size: 16px;
+  font-size: 21px;
+  margin-top: 3em;
+  padding-bottom: 30px !important;
+  margin-bottom: 30px !important;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: -.02em;
+  margin: 0 0 11px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 0.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.stick-container-btn {
+  color: #fff;
+  background-color: #2DB7F5;
+  border-color: #259BCF;
+}
+.stick-container-btn-others {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
 }
 .code-container {
   padding: 24px;
+  padding-left: 144px;
+  padding-right: 144px;
 }
 .code-container a {
   color: #FFF;
@@ -674,7 +709,7 @@ pre code {
 }
 .code-container .tab-content {
   background-color: #FFF;
-  height: 200px;
+  height: 302px;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -694,10 +729,10 @@ pre code.go {
   text-align: center;
   align-items: center;
   justify-content: center;
+  margin-top: -20px;
   padding-top: 14px;
   padding-bottom: 28px;
-  background-color: #FFF;
-  border-radius: 10px;
+  background-color: #2DB7F5;
 }
 .feature-container h6 {
   margin-top: 14px;
@@ -761,8 +796,344 @@ pre code.go {
 .option-chooser-blocks a {
   color: black;
 }
-/* responsive style */
+/* 特性部分 */
+.feature-container {
+}
+.feature-wrapper {
+  text-align: center;
+  padding: 2em;
+}
+.steps {
+  margin: 0 auto;
+  height: 22em;
+  list-style: none;
+  width: 22em;
+  z-index: 0;
+  position: relative;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.steps__icon {
+  padding-top: 2.5em;
+  width: 50%;
+}
+.steps__description {
+  padding: 0em 4em;
+  position: absolute;
+  bottom: 2.5em;
+  font-size: 0.9em;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.steps__description span {
+  font-weight: bold;
+  padding-right: 0.3em;
+}
+.steps__description a {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #373232;
+  border-radius: 0.2em;
+  color: #373232;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  margin-top: 0.6em;
+  font-size: 0.9em;
+}
+.steps__description a:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #373232;
+}
+.is-active a {
+  font-size: 2em !important;
+  background: #373232 !important;
+}
+#steps-menu ul li {
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+  border-left: 140px solid transparent;
+  border-top: 1px solid transparent;
+  font-size: 0.65em;
+  left: 50%;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  transform-origin: 0 0;
+}
+#steps-menu ul li:after {
+  content: " ";
+  width: 0.7em;
+  height: 0.4em;
+  margin-left: -0.14em;
+  margin-top: -2.1em;
+  position: absolute;
+  font-size: 3.5em;
+  background-size: 100%;
+  background-color: transparent;
+  transform: rotate(-29deg);
+  background-repeat: no-repeat;
+}
+#steps-menu ul li a {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #2DB7F5;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  height: 2em;
+  width: 2em;
+  font-size: 1.6em;
+  line-height: 2;
+  box-shadow: 0 0 0 0 transparent;
+}
+#steps-menu ul li a:hover {
+  background: #373232;
+  box-shadow: 0 0 0px 3px #373232;
+}
+.step-1 ul li:nth-of-type(1) {
+  transform: rotate(-97deg);
+}
+.step-1 ul li:nth-of-type(1) a {
+  transform: rotate(97deg);
+}
+.step-2 ul li:nth-of-type(1) {
+  transform: rotate(-157deg);
+}
+.step-2 ul li:nth-of-type(1) a {
+  transform: rotate(157deg);
+}
+.step-3 ul li:nth-of-type(1) {
+  transform: rotate(-217deg);
+}
+.step-3 ul li:nth-of-type(1) a {
+  transform: rotate(217deg);
+}
+.step-4 ul li:nth-of-type(1) {
+  transform: rotate(-277deg);
+}
+.step-4 ul li:nth-of-type(1) a {
+  transform: rotate(277deg);
+}
+.step-5 ul li:nth-of-type(1) {
+  transform: rotate(-337deg);
+}
+.step-5 ul li:nth-of-type(1) a {
+  transform: rotate(337deg);
+}
+.step-6 ul li:nth-of-type(1) {
+  transform: rotate(-397deg);
+}
+.step-6 ul li:nth-of-type(1) a {
+  transform: rotate(397deg);
+}
+.step-1 ul li:nth-of-type(2) {
+  transform: rotate(-37deg);
+}
+.step-1 ul li:nth-of-type(2) a {
+  transform: rotate(37deg);
+}
+.step-2 ul li:nth-of-type(2) {
+  transform: rotate(-97deg);
+}
+.step-2 ul li:nth-of-type(2) a {
+  transform: rotate(97deg);
+}
+.step-3 ul li:nth-of-type(2) {
+  transform: rotate(-157deg);
+}
+.step-3 ul li:nth-of-type(2) a {
+  transform: rotate(157deg);
+}
+.step-4 ul li:nth-of-type(2) {
+  transform: rotate(-217deg);
+}
+.step-4 ul li:nth-of-type(2) a {
+  transform: rotate(217deg);
+}
+.step-5 ul li:nth-of-type(2) {
+  transform: rotate(-277deg);
+}
+.step-5 ul li:nth-of-type(2) a {
+  transform: rotate(277deg);
+}
+.step-6 ul li:nth-of-type(2) {
+  transform: rotate(-337deg);
+}
+.step-6 ul li:nth-of-type(2) a {
+  transform: rotate(337deg);
+}
+.step-1 ul li:nth-of-type(3) {
+  transform: rotate(23deg);
+}
+.step-1 ul li:nth-of-type(3) a {
+  transform: rotate(-23deg);
+}
+.step-2 ul li:nth-of-type(3) {
+  transform: rotate(-37deg);
+}
+.step-2 ul li:nth-of-type(3) a {
+  transform: rotate(37deg);
+}
+.step-3 ul li:nth-of-type(3) {
+  transform: rotate(-97deg);
+}
+.step-3 ul li:nth-of-type(3) a {
+  transform: rotate(97deg);
+}
+.step-4 ul li:nth-of-type(3) {
+  transform: rotate(-157deg);
+}
+.step-4 ul li:nth-of-type(3) a {
+  transform: rotate(157deg);
+}
+.step-5 ul li:nth-of-type(3) {
+  transform: rotate(-217deg);
+}
+.step-5 ul li:nth-of-type(3) a {
+  transform: rotate(217deg);
+}
+.step-6 ul li:nth-of-type(3) {
+  transform: rotate(-277deg);
+}
+.step-6 ul li:nth-of-type(3) a {
+  transform: rotate(277deg);
+}
+.step-1 ul li:nth-of-type(4) {
+  transform: rotate(83deg);
+}
+.step-1 ul li:nth-of-type(4) a {
+  transform: rotate(-83deg);
+}
+.step-2 ul li:nth-of-type(4) {
+  transform: rotate(23deg);
+}
+.step-2 ul li:nth-of-type(4) a {
+  transform: rotate(-23deg);
+}
+.step-3 ul li:nth-of-type(4) {
+  transform: rotate(-37deg);
+}
+.step-3 ul li:nth-of-type(4) a {
+  transform: rotate(37deg);
+}
+.step-4 ul li:nth-of-type(4) {
+  transform: rotate(-97deg);
+}
+.step-4 ul li:nth-of-type(4) a {
+  transform: rotate(97deg);
+}
+.step-5 ul li:nth-of-type(4) {
+  transform: rotate(-157deg);
+}
+.step-5 ul li:nth-of-type(4) a {
+  transform: rotate(157deg);
+}
+.step-6 ul li:nth-of-type(4) {
+  transform: rotate(-217deg);
+}
+.step-6 ul li:nth-of-type(4) a {
+  transform: rotate(217deg);
+}
+.step-1 ul li:nth-of-type(5) {
+  transform: rotate(143deg);
+}
+.step-1 ul li:nth-of-type(5) a {
+  transform: rotate(-143deg);
+}
+.step-2 ul li:nth-of-type(5) {
+  transform: rotate(83deg);
+}
+.step-2 ul li:nth-of-type(5) a {
+  transform: rotate(-83deg);
+}
+.step-3 ul li:nth-of-type(5) {
+  transform: rotate(23deg);
+}
+.step-3 ul li:nth-of-type(5) a {
+  transform: rotate(-23deg);
+}
+.step-4 ul li:nth-of-type(5) {
+  transform: rotate(-37deg);
+}
+.step-4 ul li:nth-of-type(5) a {
+  transform: rotate(37deg);
+}
+.step-5 ul li:nth-of-type(5) {
+  transform: rotate(-97deg);
+}
+.step-5 ul li:nth-of-type(5) a {
+  transform: rotate(97deg);
+}
+.step-6 ul li:nth-of-type(5) {
+  transform: rotate(-157deg);
+}
+.step-6 ul li:nth-of-type(5) a {
+  transform: rotate(157deg);
+}
+.step-1 ul li:nth-of-type(6) {
+  transform: rotate(203deg);
+}
+.step-1 ul li:nth-of-type(6) a {
+  transform: rotate(-203deg);
+}
+.step-2 ul li:nth-of-type(6) {
+  transform: rotate(143deg);
+}
+.step-2 ul li:nth-of-type(6) a {
+  transform: rotate(-143deg);
+}
+.step-3 ul li:nth-of-type(6) {
+  transform: rotate(83deg);
+}
+.step-3 ul li:nth-of-type(6) a {
+  transform: rotate(-83deg);
+}
+.step-4 ul li:nth-of-type(6) {
+  transform: rotate(23deg);
+}
+.step-4 ul li:nth-of-type(6) a {
+  transform: rotate(-23deg);
+}
+.step-5 ul li:nth-of-type(6) {
+  transform: rotate(-37deg);
+}
+.step-5 ul li:nth-of-type(6) a {
+  transform: rotate(37deg);
+}
+.step-6 ul li:nth-of-type(6) {
+  transform: rotate(-97deg);
+}
+.step-6 ul li:nth-of-type(6) a {
+  transform: rotate(97deg);
+}
+.step-content {
+  display: none;
+}
+#step-1 {
+  display: block;
+}
+/* end */
+.users-container {
+  background-color: #FFF;
+  text-align: center;
+  padding-bottom: 48px;
+}
 
+/* responsive style */
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
   .search {
     display: none;
@@ -837,5 +1208,8 @@ pre code.go {
   }
   .footloose-container {
     margin-left: 0;
+  }
+  .code-container {
+    padding: 24px;
   }
 }

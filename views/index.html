@@ -1,6 +1,10 @@
 <div class="stick-container">
-  <img class="stick-container-logo" src="/static/img/beego_logo.png" />
-  <p class="stick-container-slogan">一个使用 Go 的思维来帮助您构建并开发 Go 应用程序的开源框架</p>
+  <h1 class="stick-container-title">BEEGO</h1>
+  <p class="stick-container-slogan">The web, with simplicity.</p>
+  <div>
+    <a href="#install" class="btn btn-primary stick-container-btn">Install v1.6.0</a>
+    <a href="/quickstart" target="_blank" class="btn btn-default stick-container-btn-others">Getting Started</a>
+  </div>
   <div class="code-container">
     <ul class="nav nav-tabs" role="tablist">
       <li class="nav-item">
@@ -97,32 +101,98 @@
     </div>
   </div>
 </div>
-
-{{template "header"}}
+<hr>
+{{template "header" .}}
 
 <div class="feature-container">
   <div class="row">
-    <div class="col-lg-3">
-      <img class="img-circle" src="" alt="简单化" width="140" height="140">
-      <h6>简单化</h6>
-      <p>RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。</p>
+    <div class="col-sm-5 col-xs-12">
+      <div class="feature-wrapper">
+        <div id="steps" class="steps">
+          <div id="step-1" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step1.png'" class="steps__icon" />
+            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
+              <div id="read-more"><a href="#link2">Next</a></div>
+            </div>
+          </div>
+          <div id="step-2" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step2.png'" class="steps__icon" />
+            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
+              <div id="read-more"><a href="#link3">Next</a></div>
+            </div>
+          </div>
+          <div id="step-3" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step3.png'" class="steps__icon" />
+            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
+              <div id="read-more"><a href="#link4">Next</a></div>
+            </div>
+          </div>
+          <div id="step-4" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step4.png'" class="steps__icon" />
+            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
+              <div id="read-more"><a href="#link5">Next</a></div>
+            </div>
+          </div>
+          <div id="step-5" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step5.png'" class="steps__icon" />
+            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
+              <div id="read-more"><a href="#link6">Next</a></div>
+            </div>
+          </div>
+          <div id="step-6" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step6.png'" class="steps__icon" />
+            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
+              <div id="read-more"><a href="#link1">Next</a></div>
+            </div>
+          </div>
+          <div id="steps-menu" class="step-1">
+            <ul>
+              <li class="is-active"><a id="link1" href="#step-1">1</a></li>
+              <li><a id="link2" href="#step-2">2</a></li>
+              <li><a id="link3" href="#step-3">3</a></li>
+              <li><a id="link4" href="#step-4">4</a></li>
+              <li><a id="link5" href="#step-5">5</a></li>
+              <li><a id="link6" href="#step-6">6</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-lg-3">
-      <img class="img-circle" src="" alt="智能化" width="140" height="140">
-      <h6>智能化</h6>
-      <p>支持智能路由、智能监控，可以监控 QPS、内存消耗、CPU 使用，以及 goroutine 的运行状况，让您的线上应用尽在掌握。</p>
-    </div>
-    <div class="col-lg-3">
-      <img class="img-circle" src="" alt="模块化" width="140" height="140">
-      <h6>模块化</h6>
-      <p>beego 内置了强大的模块，包括 Session、缓存操作、日志记录、配置解析、性能监控、上下文操作、ORM 模块、请求模拟等强大的模块，足以支撑你任何的应用。</p>
-    </div>
-    <div class="col-lg-3">
-      <img class="img-circle" src="" alt="高性能" width="140" height="140">
-      <h6>高性能</h6>
-      <p>beego 采用了 Go 原生的 http 包来处理请求，goroutine 的并发效率足以应付大流量的 Web 应用和 API 应用，目前已经应用于大量高并发的产品中。</p>
+    <div class="col-sm-5 col-xs-12" style="color:#FFF;">
+      <br/>
+      <br/>
+      <br/>
+      <div id="bbp">
+        <h1 id="title" class="stick-container-slogan">简单化</h1>
+        <p id="content1" class="stick-container-slogan">RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。</p>
+        <br/>
+      </div>
     </div>
   </div>
 </div>
+
+<div class="users-container">
+  <br>
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="stick-container-slogan">Beego's 用户</h2>
+      <div class="whouse">
+          <img class="img-thumbnail" src="/static/img/brands/360.png">
+          <img class="img-thumbnail" src="/static/img/brands/youdao.png">
+          <img class="img-thumbnail" src="/static/img/brands/weico.png">
+          <img class="img-thumbnail" src="/static/img/brands/weibo.png">
+          <img class="img-thumbnail" src="/static/img/brands/jd.png">
+          <img class="img-thumbnail" src="/static/img/brands/bmob.png">
+          <img class="img-thumbnail" src="/static/img/brands/ardanstudios.png">
+          <img class="img-thumbnail" src="/static/img/brands/oupeng.png">
+          <img class="img-thumbnail" src="/static/img/brands/meituan.png">
+          <img class="img-thumbnail" src="/static/img/brands/tudou.png">
+          <img class="img-thumbnail" src="/static/img/brands/lianzong.png">
+          <img class="img-thumbnail" src="/static/img/brands/17173.png">
+          <img class="img-thumbnail" src="/static/img/brands/taobao.png">
+          <img class="img-thumbnail" src="/static/img/brands/snda.png">
+          <img class="img-thumbnail" src="/static/img/brands/tencent.png">
+          <img class="img-thumbnail" src="/static/img/brands/zalora.png">
+          <img class="img-thumbnail" src="/static/img/brands/wepiao.png">
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
 
 {{template "footer" .}}
