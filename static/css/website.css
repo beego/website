@@ -121,11 +121,14 @@ a.logo {
 header .nav {
   height: 80px;
   line-height: 80px;
-  float: right;
   font-size: 0.875em;
   position: relative;
-  margin-right: 4%;
+  align-items: center;
   overflow: hidden;
+}
+.nav-right {
+  margin-right: 4%;
+  float: right;
 }
 header .nav ul li {
   float: left;
@@ -271,6 +274,7 @@ footer {
   position: relative;
   z-index: 1;
   color: #666;
+  padding: 20px;
 }
 footer ul {
   overflow: hidden;
@@ -709,7 +713,7 @@ pre code {
 }
 .code-container .tab-content {
   background-color: #FFF;
-  height: 302px;
+  height: 262px;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -802,6 +806,8 @@ pre code.go {
 .feature-wrapper {
   text-align: center;
   padding: 2em;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .steps {
   margin: 0 auto;
@@ -1130,9 +1136,9 @@ pre code.go {
 .users-container {
   background-color: #FFF;
   text-align: center;
-  padding-bottom: 48px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
-
 /* responsive style */
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
   .search {

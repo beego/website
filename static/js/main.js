@@ -12,7 +12,7 @@ $(document).ready(function() {
     $("#steps-menu").removeClass();
     var stepClass = step.charAt(6);
     $("#steps-menu").addClass("step-" + stepClass);
-    switch ((stepClass - 0)) {
+    switch ((stepClass-0)) {
       case 1:
         $("#title").text("简单化");
         $("#content1").text("RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。");

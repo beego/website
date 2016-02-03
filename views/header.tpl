@@ -10,7 +10,7 @@
   <div class="search">
     <div id="autoComplete"></div>
   </div>
-  <nav class="nav" style="display: block;">
+  <nav class="nav nav-right" style="display: block;">
     <span class="bar"></span>
     <ul>
       {{range .HomeNav}}
