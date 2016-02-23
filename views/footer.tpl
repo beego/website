@@ -1,5 +1,6 @@
 {{define "footer"}}
 <footer id="footer">
+  {{if eq .Lang "zh-CN"}}
   <ul>
     <li>
       <h2>GitHub</h2>
@@ -26,10 +27,10 @@
       {{end}}
       <div class="dropup choose-lang-container">
         <button class="btn dropdown-toggle choose-lang" type="button" id="choose-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Language:English <i class="caret"></i>
+          当前语言:简体中文 <i class="caret"></i>
         </button>
         <div class="dropdown-menu choose-lang-menu" aria-labelledby="choose-language">
-          <a class="dropdown-item choose-lang-item" href="">简体中文</a>
+          <a class="dropdown-item choose-lang-item" href="">English</a>
         </div>
       </div>
 
@@ -40,6 +41,45 @@
       <div>文档版本：1.6.0</div>
     </li>
   </ul>
+  {{end}}
+  {{if eq .Lang "en-US"}}
+  <ul>
+    <li>
+      <h2>GitHub</h2>
+      <a target="_blank " href="https://github.com/astaxie/beego">GitHub</a> |
+      <a target="_blank" href="https://github.com/beego/bee">Bee Tools</a>
+      <hr>
+      <a class="github-button" href="https://github.com/astaxie/beego" data-icon="octicon-star" data-count-href="/astaxie/beego/stargazers" data-count-api="/repos/astaxie/beego#stargazers_count" data-count-aria-label="# Beego on GitHub" aria-label="Star astaxie/beego on GitHub">Star</a>
+      <a class="github-button" href="https://github.com/astaxie/beego/fork" data-icon="octicon-repo-forked" data-count-href="/astaxie/beego/network" data-count-api="/repos/astaxie/beego#forks_count" data-count-aria-label="# Beego on GitHub" aria-label="Fork astaxie/beego on GitHub">Fork</a>
+    </li>
+    <li>
+      <h2>Our</h2>
+      <a target="_blank" href="/blog">Blog - Beego </a> |
+      <a target="_blank" href="#">Feedback And Advise</a> |
+      <a target="_blank" href="#">Discuss</a> |
+      <a target="_blank" href="#">Report Bug</a>
+    </li>
+    <li>
+      <h2>Others</h2>
+      <a target="_blank" href="/donate"> Donate Us</a> |
+      <div class="dropup choose-lang-container">
+        <button class="btn dropdown-toggle choose-lang" type="button" id="choose-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Language:English <i class="caret"></i>
+        </button>
+        <div class="dropdown-menu choose-lang-menu" aria-labelledby="choose-language">
+          <a class="dropdown-item choose-lang-item" href="">简体中文</a>
+        </div>
+      </div>
+
+    </li>
+    <li>
+      <div>Copyright © 2012-2014 Beego Under the apache 2.0 licence.</div>
+      <div>Logo designed by Tengfei.</div>
+      <div>Document version: 1.6.0</div>
+    </li>
+  </ul>
+  {{end}}
+
 
   <script src='/static/js/jquery-2.1.4.min.js'></script>
   <script src='/static/js/tether.min.js'></script>

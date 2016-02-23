@@ -14,28 +14,28 @@ $(document).ready(function() {
     $("#steps-menu").addClass("step-" + stepClass);
     switch ((stepClass-0)) {
       case 1:
-        $("#title").text("简单化");
-        $("#content1").text("RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。");
+        $("#title").text("EASY TO USE");
+        $("#content1").text("With RESTful support, MVC model, and use bee tool to build your apps quickly with features including code hot compile, automated testing, and automated packing and deploying.");
         break;
       case 2:
-        $("#title").text("智能化");
-        $("#content1").text("支持智能路由、智能监控，可以监控 QPS、内存消耗、CPU 使用，以及 goroutine 的运行状况，让您的线上应用尽在掌握。");
+        $("#title").text("INTELLIGENT");
+        $("#content1").text("With intelligent routing and monitoring, it's able to monitor your QPS, memory and CPU usages, and goroutine status. It provides you the fully control of your online apps.");
         break;
       case 3:
-        $("#title").text("模块化");
-        $("#content1").text("内置强大的模块，包括 Session、缓存操作、日志记录、配置解析、性能监控、上下文操作、ORM 模块、请求模拟等强大的模块，足以支撑你任何的应用。");
+        $("#title").text("MODULAR");
+        $("#content1").text("With powerful built-in modules including session control, caching, logging, configuration parsing, performance supervising, context handling, ORM supporting, and requests simulating. You get the powerful foundation for any type of applications.");
         break;
       case 4:
-        $("#title").text("高性能");
-        $("#content1").text("采用Go 原生的 http 包来处理请求，goroutine 的并发效率足以应付大流量的 Web 应用和 API 应用，目前已经应用于大量高并发的产品中。");
+        $("#title").text("HIGH PERFORMANCE");
+        $("#content1").text("With native Go http package to handle the requests and the efficient concurrence of goroutine. Your beego applications can handle massive trafic as beego are doing in many productions.");
         break;
       case 5:
-        $("#title").text("简单化");
-        $("#content1").text("RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。");
+        $("#title").text("EASY TO USE");
+        $("#content1").text("With RESTful support, MVC model, and use bee tool to build your apps quickly with features including code hot compile, automated testing, and automated packing and deploying.");
         break;
       default:
-        $("#title").text("智能化");
-        $("#content1").text("支持智能路由、智能监控，可以监控 QPS、内存消耗、CPU 使用，以及 goroutine 的运行状况，让您的线上应用尽在掌握。");
+        $("#title").text("INTELLIGENT");
+        $("#content1").text("With intelligent routing and monitoring, it's able to monitor your QPS, memory and CPU usages, and goroutine status. It provides you the fully control of your online apps.");
         break;
     }
     currentNum = step.substr(6, 1) - 0 + 1;
@@ -50,28 +50,28 @@ $(document).ready(function() {
     $(readMore).click();
     switch ((readMore.substr(5, 1) - 0)) {
       case 1:
-        $("#title").text("简单化");
-        $("#content1").text("RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。");
+        $("#title").text("EASY TO USE");
+        $("#content1").text("With RESTful support, MVC model, and use bee tool to build your apps quickly with features including code hot compile, automated testing, and automated packing and deploying.");
         break;
       case 2:
-        $("#title").text("智能化");
-        $("#content1").text("支持智能路由、智能监控，可以监控 QPS、内存消耗、CPU 使用，以及 goroutine 的运行状况，让您的线上应用尽在掌握。");
+        $("#title").text("INTELLIGENT");
+        $("#content1").text("With intelligent routing and monitoring, it's able to monitor your QPS, memory and CPU usages, and goroutine status. It provides you the fully control of your online apps.");
         break;
       case 3:
-        $("#title").text("模块化");
-        $("#content1").text("内置强大的模块，包括 Session、缓存操作、日志记录、配置解析、性能监控、上下文操作、ORM 模块、请求模拟等强大的模块，足以支撑你任何的应用。");
+        $("#title").text("MODULAR");
+        $("#content1").text("With powerful built-in modules including session control, caching, logging, configuration parsing, performance supervising, context handling, ORM supporting, and requests simulating. You get the powerful foundation for any type of applications.");
         break;
       case 4:
-        $("#title").text("高性能");
-        $("#content1").text("采用Go 原生的 http 包来处理请求，goroutine 的并发效率足以应付大流量的 Web 应用和 API 应用，目前已经应用于大量高并发的产品中。");
+        $("#title").text("HIGH PERFORMANCE");
+        $("#content1").text("With native Go http package to handle the requests and the efficient concurrence of goroutine. Your beego applications can handle massive trafic as beego are doing in many productions.");
         break;
       case 5:
-        $("#title").text("简单化");
-        $("#content1").text("RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。");
+        $("#title").text("EASY TO USE");
+        $("#content1").text("With RESTful support, MVC model, and use bee tool to build your apps quickly with features including code hot compile, automated testing, and automated packing and deploying.");
         break;
       default:
-        $("#title").text("智能化");
-        $("#content1").text("支持智能路由、智能监控，可以监控 QPS、内存消耗、CPU 使用，以及 goroutine 的运行状况，让您的线上应用尽在掌握。");
+        $("#title").text("INTELLIGENT");
+        $("#content1").text("With intelligent routing and monitoring, it's able to monitor your QPS, memory and CPU usages, and goroutine status. It provides you the fully control of your online apps.");
         break;
     }
     currentNum = readMore.substr(5, 1) - 0 + 1;
@@ -108,28 +108,28 @@ $(document).ready(function() {
 
     switch (currentNum) {
       case 1:
-        $("#title").text("简单化");
-        $("#content1").text("RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。");
+        $("#title").text("EASY TO USE");
+        $("#content1").text("With RESTful support, MVC model, and use bee tool to build your apps quickly with features including code hot compile, automated testing, and automated packing and deploying.");
         break;
       case 2:
-        $("#title").text("智能化");
-        $("#content1").text("支持智能路由、智能监控，可以监控 QPS、内存消耗、CPU 使用，以及 goroutine 的运行状况，让您的线上应用尽在掌握。");
+        $("#title").text("INTELLIGENT");
+        $("#content1").text("With intelligent routing and monitoring, it's able to monitor your QPS, memory and CPU usages, and goroutine status. It provides you the fully control of your online apps.");
         break;
       case 3:
-        $("#title").text("模块化");
-        $("#content1").text("内置强大的模块，包括 Session、缓存操作、日志记录、配置解析、性能监控、上下文操作、ORM 模块、请求模拟等强大的模块，足以支撑你任何的应用。");
+        $("#title").text("MODULAR");
+        $("#content1").text("With powerful built-in modules including session control, caching, logging, configuration parsing, performance supervising, context handling, ORM supporting, and requests simulating. You get the powerful foundation for any type of applications.");
         break;
       case 4:
-        $("#title").text("高性能");
-        $("#content1").text("采用Go 原生的 http 包来处理请求，goroutine 的并发效率足以应付大流量的 Web 应用和 API 应用，目前已经应用于大量高并发的产品中。");
+        $("#title").text("HIGH PERFORMANCE");
+        $("#content1").text("With native Go http package to handle the requests and the efficient concurrence of goroutine. Your beego applications can handle massive trafic as beego are doing in many productions.");
         break;
       case 5:
-        $("#title").text("简单化");
-        $("#content1").text("RESTful 支持、MVC 模型，可以使用 bee 工具快速地开发应用，包括监控代码修改进行热编译、自动化测试代码以及自动化打包部署。");
+        $("#title").text("EASY TO USE");
+        $("#content1").text("With RESTful support, MVC model, and use bee tool to build your apps quickly with features including code hot compile, automated testing, and automated packing and deploying.");
         break;
       default:
-        $("#title").text("智能化");
-        $("#content1").text("支持智能路由、智能监控，可以监控 QPS、内存消耗、CPU 使用，以及 goroutine 的运行状况，让您的线上应用尽在掌握。");
+        $("#title").text("INTELLIGENT");
+        $("#content1").text("With intelligent routing and monitoring, it's able to monitor your QPS, memory and CPU usages, and goroutine status. It provides you the fully control of your online apps.");
         break;
     }
 
