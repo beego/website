@@ -3,6 +3,7 @@ package models
 import (
 	"fmt"
 
+	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/config"
 )
 
@@ -12,10 +13,10 @@ var (
 )
 
 // ReadI18n read i18n data
-func ReadI18n(iniFile config.Configer) {
-	langMap, _ := iniFile.GetSection("lang")
+func ReadI18n(langMap map[string]string) {
 	for lang := range langMap {
 		file := "conf/lang/" + lang + ".ini"
+		beego.Info("Model.Read.[" + file + "]")
 		i18n, err := NewI18n(lang, file)
 		if err != nil {
 			panic(err)

@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
+	beego.BeeLogger.SetLogger("console", "")
+
 	models.Init()
 	routers.Init()
 	beego.Run()

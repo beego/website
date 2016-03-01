@@ -12,4 +12,5 @@ func Init() {
 	beego.Router("/docs/*", new(controllers.DocController))
 	beego.Router("/blog", new(controllers.BlogController))
 	beego.Router("/blog/*", new(controllers.BlogController))
+	beego.Router("/video", new(controllers.VideoController))
 }
