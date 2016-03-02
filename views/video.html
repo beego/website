@@ -1,6 +1,13 @@
 {{template "header" .}}
 <div class="main-wrapper">
-
+    <section class="footloose-container">
+        <h4>Desc:{{.Video.Desc}}</h4>
+        <ul>
+            {{range .Video.List}}
+                <li>{{.index}} - {{.title}}</li>
+            {{end}}
+        </ul>
+    </section>
   <section class="footloose-container">
     <p class="footloose-container-describe">This is the tutorial schedule:
       <br>
