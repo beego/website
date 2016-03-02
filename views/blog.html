@@ -1,18 +1,11 @@
 {{template "header" .}}
-<div class="main-wrapper">
 
-  <section class="footloose-container">
-
-    <ul class="list-group">
-      <li class="list-group-item"><p><a href="blog/faq">Beego 常见问题列表</a></p></li>
-
-      <li class="list-group-item"><p><a href="blog/beego_api">beego API自动化文档</a></p></li>
-
-      <li class="list-group-item"><p><a href="blog/beego1_release">beego1.0正式版发布</a></p></li>
-    </ul>
-    
-  </section>
-
-</div>
+  <div class="blog-wrapper">
+    <article class="markdown">
+      <div id="doc-content">
+        {{ .BlogContent }}
+      </div>
+    </article>
+  </div>
 
 {{template "footer" .}}
