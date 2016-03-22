@@ -689,6 +689,7 @@ pre code {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 .stick-container-btn {
   color: #fff;

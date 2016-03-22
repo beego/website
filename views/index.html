@@ -2,27 +2,59 @@
   <h1 class="stick-container-title">BEEGO</h1>
   <p class="stick-container-slogan">The web, with simplicity.</p>
   <div>
-    <a href="#install" class="btn btn-primary stick-container-btn">Install v1.6.0</a>
-    <a href="/quickstart" target="_blank" class="btn btn-default stick-container-btn-others">Getting Started</a>
+    {{if eq .Lang "zh-CN"}}
+      <a href="#install" class="btn btn-primary stick-container-btn">安装 v1.6.1</a>
+      <a href="/quickstart" target="_blank" class="btn btn-default stick-container-btn-others">快速开始</a>
+    {{end}}
+    {{if eq .Lang "en-US"}}
+      <a href="#install" class="btn btn-primary stick-container-btn">Install v1.6.1</a>
+      <a href="/quickstart" target="_blank" class="btn btn-default stick-container-btn-others">Getting Started</a>
+    {{end}}
   </div>
   <div class="code-container">
     <ul class="nav nav-tabs" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" href="#quick-start" id="quick-start-tab" role="tab" data-toggle="tab"
-        aria-controls="quick-start" aria-expanded="true">Quick Start</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#template-binding-data" role="tab" id="template-binding-data-tab" data-toggle="tab"
-        aria-controls="template-binding-data">Template Parsing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#offical-demo" role="tab" id="offical-demo-tab" data-toggle="tab"
-        aria-controls="offical-demo">Official demo</a>
+        {{if eq .Lang "zh-CN"}}
+          <a class="nav-link active" href="#quick-start" id="quick-start-tab" role="tab" data-toggle="tab"
+          aria-controls="quick-start" aria-expanded="true">快速开始</a>
+        {{end}}
+        {{if eq .Lang "en-US"}}
+          <a class="nav-link active" href="#quick-start" id="quick-start-tab" role="tab" data-toggle="tab"
+          aria-controls="quick-start" aria-expanded="true">Quick Start</a>
+        {{end}}
       </li>
     </ul>
 
     <!-- Content Panel -->
     <div class="tab-content">
+      {{if eq .Lang "zh-CN"}}
+      <div role="tabpanel" class="tab-pane fade in active" id="quick-start" aria-labelledby="quick-start-tab">
+        <article class="markdown">
+          <blockquote><p>下载与安装 </p></blockquote>
+          <div class="highlight"><pre><code class="go">
+  go get github.com/astaxie/beego
+          </code></pre></div>
+          <blockquote><p>创建文件 <code>hello.go</code></p></blockquote>
+          <div class="highlight"><pre><code class="go">
+  package main
+
+  import "github.com/astaxie/beego"
+
+  func main() {
+    beego.Run()
+  }
+          </code></pre></div>
+          <blockquote><p>编译与运行 </p></blockquote>
+          <div class="highlight"><pre><code class="go">
+  go build -o hello hello.go
+  ./hello
+          </code></pre></div>
+          <blockquote><p>浏览效果，打开浏览器并访问 <code>http://localhost:8080</code></p></blockquote>
+          <blockquote><p>恭喜！您已经成功构建了第一个 beego 项目。请查阅开发文档以进行深入学习。</p>
+        </article>
+      </div>
+      {{end}}
+      {{if eq .Lang "en-US"}}
       <div role="tabpanel" class="tab-pane fade in active" id="quick-start" aria-labelledby="quick-start-tab">
         <article class="markdown">
           <blockquote><p>Download and install </p></blockquote>
@@ -44,60 +76,11 @@
   go build -o hello hello.go
   ./hello
           </code></pre></div>
-          <blockquote><p>View effects，Open your browser and visit <code>http://localhost:8080</code></p></blockquote>
+          <blockquote><p>View effects, Open your browser and visit <code>http://localhost:8080</code></p></blockquote>
           <blockquote><p>Congratulations! You just built your first beego app. Please see Documentation for going further.</p>
         </article>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="template-binding-data" aria-labelledby="template-binding-data-tab">
-        <article class="markdown">
-          <blockquote><p>Download and install </p></blockquote>
-          <div class="highlight"><pre><code class="go">
-  go get github.com/astaxie/beego
-          </code></pre></div>
-          <blockquote><p>Create file <code>hello.go</code></p></blockquote>
-          <div class="highlight"><pre><code class="go">
-  package main
-
-  import "github.com/astaxie/beego"
-
-  func main() {
-    beego.Run()
-  }
-          </code></pre></div>
-          <blockquote><p>Build and run </p></blockquote>
-          <div class="highlight"><pre><code class="go">
-  go build -o hello hello.go
-  ./hello
-          </code></pre></div>
-          <blockquote><p>View effects，Open your browser and visit <code>http://localhost:8080</code></p></blockquote>
-          <blockquote><p>Congratulations! You just built your first beego app. Please see Documentation for going further.</p>
-        </article>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="official-demo" aria-labelledby="official-demo-tab">
-        <article class="markdown">
-          <blockquote><p>Download and install </p></blockquote>
-          <div class="highlight"><pre><code class="go">
-  go get github.com/astaxie/beego
-          </code></pre></div>
-          <blockquote><p>Create file <code>hello.go</code></p></blockquote>
-          <div class="highlight"><pre><code class="go">
-  package main
-
-  import "github.com/astaxie/beego"
-
-  func main() {
-    beego.Run()
-  }
-          </code></pre></div>
-          <blockquote><p>Build and run </p></blockquote>
-          <div class="highlight"><pre><code class="go">
-  go build -o hello hello.go
-  ./hello
-          </code></pre></div>
-          <blockquote><p>View effects，Open your browser and visit <code>http://localhost:8080</code></p></blockquote>
-          <blockquote><p>Congratulations! You just built your first beego app. Please see Documentation for going further.</p>
-        </article>
-      </div>
+      {{end}}
     </div>
   </div>
 </div>
@@ -105,7 +88,13 @@
 
 <header id="header" class="clearfix">
   <div class="tips-container">
+    {{if eq .Lang "zh-CN"}}
+    <a class="tips" href="#"><span>1.6.0</span> 已正式发布，<span>1.6.0 文档</span> 已更新</a>
+    {{end}}
+    {{if eq .Lang "en-US"}}
     <a class="tips" href="#"><span>1.6.0</span> Released，<span>1.6.0 Document</span> has been updated</a>
+    {{end}}
+
   </div>
 
   <nav class="nav" style="display: block;">
@@ -127,69 +116,19 @@
 
 <div class="feature-container">
   <div class="row">
-    <div class="col-sm-5 col-xs-12">
-      <div class="feature-wrapper">
-        <div id="steps" class="steps">
-          <div id="step-1" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step1.png'" class="steps__icon" />
-            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
-              <div id="read-more"><a href="#link2">Next</a></div>
-            </div>
-          </div>
-          <div id="step-2" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step2.png'" class="steps__icon" />
-            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
-              <div id="read-more"><a href="#link3">Next</a></div>
-            </div>
-          </div>
-          <div id="step-3" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step3.png'" class="steps__icon" />
-            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
-              <div id="read-more"><a href="#link4">Next</a></div>
-            </div>
-          </div>
-          <div id="step-4" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step4.png'" class="steps__icon" />
-            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
-              <div id="read-more"><a href="#link5">Next</a></div>
-            </div>
-          </div>
-          <div id="step-5" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step5.png'" class="steps__icon" />
-            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
-              <div id="read-more"><a href="#link6">Next</a></div>
-            </div>
-          </div>
-          <div id="step-6" class="step-content"><img src="" onerror="this.onerror=null; this.src='/static/img/feature/step6.png'" class="steps__icon" />
-            <div class="steps__description"><span>Beego</span>is simplest enough and give it a try
-              <div id="read-more"><a href="#link1">Next</a></div>
-            </div>
-          </div>
-          <div id="steps-menu" class="step-1">
-            <ul>
-              <li class="is-active"><a id="link1" href="#step-1">1</a></li>
-              <li><a id="link2" href="#step-2">2</a></li>
-              <li><a id="link3" href="#step-3">3</a></li>
-              <li><a id="link4" href="#step-4">4</a></li>
-              <li><a id="link5" href="#step-5">5</a></li>
-              <li><a id="link6" href="#step-6">6</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-5 col-xs-12" style="color:#FFF;">
-      <br/>
-      <br/>
-      <br/>
-      <div id="bbp">
-        <h1 id="title" class="stick-container-slogan">EASY TO USE</h1>
-        <p id="content1" class="stick-container-slogan">With RESTful support, MVC model, and use bee tool to build your apps quickly with features including code hot compile, automated testing, and automated packing and deploying.</p>
-        <br/>
-      </div>
-    </div>
+
   </div>
 </div>
 
 <div class="users-container">
   <div class="row">
     <div class="col-md-12">
+      {{if eq .Lang "zh-CN"}}
+      <h2 class="stick-container-slogan">我们的知名顾客</h2>
+      {{end}}
+      {{if eq .Lang "en-US"}}
       <h2 class="stick-container-slogan">Our well-known customers</h2>
+      {{end}}
       <div class="whouse">
           <img class="img-thumbnail" src="/static/img/brands/huawei.png">
           <img class="img-thumbnail" src="/static/img/brands/360.png">

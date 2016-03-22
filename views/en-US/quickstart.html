@@ -1,0 +1,124 @@
+<div class="main-wrapper">
+
+  <section class="footloose-container">
+    <article class="markdown">
+      <div id="doc-content">
+
+        <h1 id="getting-started">Getting started</h1>
+
+        <h2 id="installation">Installation</h2>
+
+        <p>Beego contains sample applications to help you learn and use the Beego app framework.</p>
+
+        <p>You will need a functioning Go 1.1 installation for this to work.</p>
+
+        <p>You will need to install Beego and the <a href="http://beego.me/docs/install/bee.md">Bee</a> dev tool:</p>
+        <pre><code>$ go get github.com/astaxie/beego
+    $ go get github.com/beego/bee
+    </code></pre>
+
+        <p>For convenience, you should add <code>$GOPATH/bin</code> to your<code>$PATH</code> environment variable.</p>
+
+        <p>Want to quickly see how it works? Then just set things up like this:</p>
+        <pre><code>$ cd $GOPATH/src
+    $ bee new hello
+    $ cd hello
+    $ bee run
+    </code></pre>
+
+        <p>Windows users：</p>
+        <pre><code>&gt; cd %GOPATH%/src
+    &gt; bee new hello
+    &gt; cd hello
+    &gt; bee run hello
+    </code></pre>
+
+        <p>These commands help you:</p>
+
+        <ol>
+          <li>Install Beego into your <code>$GOPATH</code>.</li>
+          <li>Install the Bee tool in your computer.</li>
+          <li>Create a new application called <code>hello</code>.</li>
+          <li>Start hot compile.</li>
+        </ol>
+
+        <p>Once it’s running, open a browser to <a href="http://localhost:8080/">http://localhost:8080/</a>.</p>
+
+        <h2 id="simple-example">Simple example</h2>
+
+        <p>The following example prints <code>Hello world</code> to your browser, it shows how easy it is to build a web application with beego.</p>
+        <pre><code>package main
+
+    import (
+        "github.com/astaxie/beego"
+    )
+
+    type MainController struct {
+        beego.Controller
+    }
+
+    func (this *MainController) Get() {
+        this.Ctx.WriteString("hello world")
+    }
+
+    func main() {
+        beego.Router("/", &amp;MainController{})
+        beego.Run()
+    }
+    </code></pre>
+
+        <p>Save file as <code>hello.go</code>, build and run it:</p>
+        <pre><code>$ go build -o hello hello.go
+    $ ./hello
+    </code></pre>
+
+        <p>Open <a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a> in your browser and you will see <code>hello world</code>.</p>
+
+        <p>What is happening in the scenes of the above example?</p>
+
+        <ol>
+          <li>We import package <code>github.com/astaxie/beego</code>. As we know, Go initializes packages and runs init() in every package (<a href="https://github.com/Unknwon/build-web-application-with-golang_EN/blob/master/eBook/02.3.md#main-function-and-init-function">more details</a>),
+            so Beego initializes the <code>BeeApp</code> application at this time.</li>
+          <li>Define the controller. We define a struct called <code>MainController</code> with a anonymous field <code>beego.Controller</code>, so the <code>MainController</code> has all methods that <code>beego.Controller</code> has.</li>
+          <li>Define some RESTful methods. Due to the anonymous field above, <code>MainController</code> already has <code>Get</code>, <code>Post</code>, <code>Delete</code>, <code>Put</code> and other methods, these methods will be called when user sends a corresponding
+            request (e.g. the <code>Post</code> method is called to handle requests using POST. Therefore, after we overloaded the <code>Get</code> method in <code>MainController</code>, all GET requests will use that method in <code>MainController</code>        instead of in <code>beego.Controller</code>.</li>
+          <li>Define the main function. All applications in Go use <code>main</code> as their entry point like C does.</li>
+          <li>Register routers. This tells Beego which controller is responsible for specific requests. Here we register <code>MainController</code> for <code>/</code>, so all requests to <code>/</code> will be handed by <code>MainController</code>. Be aware
+            that the first argument is the path and the second one is pointer to the controller you want to register.</li>
+          <li>Run the application on port 8080 as default, press <code>Ctrl+c</code> to exit.</li>
+        </ol>
+
+        <p>Following are shortcut <code>.bat</code> files for Windows users:</p>
+
+        <p>Create files <code>step1.install-bee.bat</code> and <code>step2.new-beego-app.bat</code> under <code>%GOPATH%/src</code>.</p>
+
+        <p><code>step1.install-bee.bat</code>:</p>
+        <pre><code>set GOPATH=%~dp0..
+    go build github.com\beego\bee
+    copy bee.exe %GOPATH%\bin\bee.exe
+    del bee.exe
+    pause
+    </code></pre>
+
+        <p><code>step2.new-beego-app.bat</code>:</p>
+        <pre><code>@echo Set value of APP same as your app folder
+    set APP=coscms.com
+    set GOPATH=%~dp0..
+    set BEE=%GOPATH%\bin\bee
+    %BEE% new %APP%
+    cd %APP%
+    echo %BEE% run %APP%.exe &gt; run.bat
+    echo pause &gt;&gt; run.bat
+    start run.bat
+    pause
+    start http://127.0.0.1:8080
+    </code></pre>
+
+        <p>Click those two file in order will quick start your Beego tour. And just run <code>run.bat</code> in the future.</p>
+
+
+      </div>
+    </article>
+  </section>
+
+</div>
