@@ -5,9 +5,9 @@
           {{range .DocNav}}
           <li>
             {{if .IsURL}}
-            <a href="{{.URL}}" class="{{.I18n}}">{{$.I18n.Tr .I18n}}</a>
+            <h4><a href="{{.URL}}" class="{{.I18n}}">{{$.I18n.Tr .I18n}}</a></h4>
             {{else}}
-            <span>{{$.I18n.Tr .I18n}}</span>
+            <span class="no-url">#{{$.I18n.Tr .I18n}}</span>
             {{end}}
 
             {{if .Children}}
@@ -17,7 +17,7 @@
                     {{if .IsURL}}
                     <a href="{{.URL}}" class="{{.I18n}}">{{$.I18n.Tr .I18n}}</a>
                     {{else}}
-                    <span>{{$.I18n.Tr .I18n}}</span>
+                    <span class="no-url">#{{$.I18n.Tr .I18n}}</span>
                     {{end}}
 
                     {{if .Children}}
@@ -27,7 +27,7 @@
                             {{if .IsURL}}
                             <a href="{{.URL}}" class="{{.I18n}}">{{$.I18n.Tr .I18n}}</a>
                             {{else}}
-                            <span>{{$.I18n.Tr .I18n}}</span>
+                            <span class="no-url">#{{$.I18n.Tr .I18n}}</span>
                             {{end}}
                         </li>
                         {{end}}

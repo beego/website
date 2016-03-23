@@ -101,7 +101,7 @@ a.logo {
   line-height: 40px;
   margin: 20px 0 20px 4%;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0;
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
   color: #2db7f5;
   width: 246px;
@@ -141,6 +141,7 @@ header .nav ul li a {
   height: 100%;
   display: block;
   padding: 0 22px;
+    font-size: 16px;
 }
 a.nav-link-disabled {
   cursor: not-allowed;
@@ -193,7 +194,6 @@ header .nav .bar {
 .aside-container li h4 {
   font-size: 14px;
   font-weight: 600;
-  padding: 0 0 0 24px;
   line-height: 40px;
   height: 40px;
   margin: 0;
@@ -233,6 +233,10 @@ header .nav .bar {
   padding-left: 24px;
   font-size: 14px;
   color: #666;
+}
+.aside-container .no-url{
+    padding-left: 12px;
+    color: #AAA;
 }
 .aside-container li.type-divider {
   font-size: 14px;
