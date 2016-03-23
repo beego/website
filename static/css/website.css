@@ -742,7 +742,15 @@ pre code.go {
   margin-top: -20px;
   padding-top: 14px;
   padding-bottom: 28px;
-  background-color: #2DB7F5;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #FFF;
+}
+.feature-container h3 {
+  margin-top: 10px;
+}
+.text-center {
+  text-align: center;
 }
 .feature-container h6 {
   margin-top: 14px;
