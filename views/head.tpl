@@ -12,4 +12,5 @@
 	<link rel="apple-touch-icon-precomposed" href="">
 	<!-- inclue common files -->
 	<link rel='stylesheet' href='/static/css/bootstrap-4.0-flex.css'>
-	<link rel='stylesheet' href='/static/css/website.css'> {{end}}
+	<link rel='stylesheet' href='/static/css/website.css'>
+	<link rel='stylesheet' href='/static/css/styles/github-gist.css'> {{end}}
