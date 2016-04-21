@@ -21,7 +21,7 @@ git clone https://github.com/beego/beeblog
 3. Compile:
 
 ```
-go build website.go
+go build main.go
 ```
 
 run `website` and visit `http://localhost:8082`
