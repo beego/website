@@ -1,13 +1,11 @@
-html, body {
-    width: 100%;
-    height: 100%;
-}
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 
 body {
-    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", SimSun, sans-serif;
+    font-family:Lato, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", SimSun, sans-serif;
     line-height: 1.5;
     color: #444;
-    font-size: 14px;
+    font-size: 16px;
     background: #FFF;
     overflow-x: hidden;
 }
@@ -21,12 +19,12 @@ ul, li {
     list-style: none;
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
     margin: 0;
     padding: 0
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block
 }
 
@@ -811,12 +809,12 @@ pre code {
     height: 100%;
 }
 
-#logo-img{
-    width: 300px;
+#logo-hero-container{
+    padding: 2rem 0;
 }
 
-#logo-hero-container {
-    height: 100%;
+#logo-img{
+    width: 360px;
 }
 
 #code-start-container {
@@ -842,19 +840,21 @@ pre code {
 }
 
 #slogan {
-    font-size: 21px;
-    line-height: 1.6;
-    font-weight: 300;
+    font-size: 28px;
+    line-height: 2em;
+    font-weight: 800;
     letter-spacing: -.02em;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    margin: 1rem 0;
+    margin: 0 auto;
+    width: 500px;
+}
+
+#install-container{
+    margin-top: 2rem;
 }
 
 #nav{
     text-align: center;
     padding: 0;
-    margin-top: -80px;
 }
 
 #nav .navbar-nav .nav-item {

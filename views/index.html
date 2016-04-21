@@ -1,28 +1,4 @@
-<!-- logo hero container -->
-<div id="logo-hero-container" class="container flex-center">
-    <h1 id="logo-title">
-        <img src="/static/img/beego.png" alt="beego-logo" id="logo-img"/>
-    </h1>
-    <p class="stick-container-slogan" id="slogan">The web, with simplicity.</p>
-    <div id="code-start-container" class="flex-center">
-        <div id="code-start-command">
-            <span class="comment-word">// download bee tool</span><br/>
-            go get github.com/beego/bee <br/>
-            <span class="comment-word">// add $GOPATH to $PATH</span><br/>
-            bee new site
-        </div>
-    </div>
-    <div id="install-container">
-        {{if eq .Lang "zh-CN"}}
-        <a href="#install" class="btn btn-danger btn-lg install-btn">Beego v1.6.1</a>
-        <!--<a href="/quickstart" target="_blank" class="btn btn-default stick-container-btn-others">快速开始</a>-->
-        {{end}}
-        {{if eq .Lang "en-US"}}
-        <a href="#install" class="btn btn-danger btn-lg install-btn">Beego v1.6.1</a>
-        <!--<a href="/quickstart" target="_blank" class="btn btn-default stick-container-btn-others">Getting Started</a>-->
-        {{end}}
-    </div>
-</div>
+<!-- navigator -->
 <nav id="nav" class="navbar navbar-dark bg-inverse">
     <ul class="nav navbar-nav">
         {{range .HomeNav}}
@@ -32,6 +8,31 @@
         {{end}}
     </ul>
 </nav>
+<!-- logo hero container -->
+<div id="logo-hero-container" class="container flex-center">
+    <h1 id="logo-title">
+        <img src="/static/img/beego.png" alt="beego-logo" id="logo-img"/>
+    </h1>
+    <p class="stick-container-slogan" id="slogan">BeeGo make it fun and easy to code more advanced web applications while still adhering to the MVC concepts!</p>
+    <!--<div id="code-start-container" class="flex-center">
+        <div id="code-start-command">
+            <span class="comment-word">// download bee tool</span><br/>
+            go get github.com/beego/bee <br/>
+            <span class="comment-word">// add $GOPATH to $PATH</span><br/>
+            bee new site
+        </div>
+    </div>-->
+    <div id="install-container">
+        {{if eq .Lang "zh-CN"}}
+        <a href="#install" class="btn btn-danger btn-lg install-btn">Latest Stable v1.6.1</a>
+        <!--<a href="/quickstart" target="_blank" class="btn btn-default stick-container-btn-others">快速开始</a>-->
+        {{end}}
+        {{if eq .Lang "en-US"}}
+        <a href="#install" class="btn btn-danger btn-lg install-btn">Latest Stable v1.6.1</a>
+        <!--<a href="/quickstart" target="_blank" class="btn btn-default stick-container-btn-others">Getting Started</a>-->
+        {{end}}
+    </div>
+</div>
 <div class="feature-container">
     {{if eq .Lang "zh-CN"}}
     <div class="row">
