@@ -1,9 +1,9 @@
-{{template "head"}}
-<title>Beego WebSite</title>
-</head>
+{{template "head.html" .}}
 <body>
-<div id="section">
-    {{.LayoutContent}}
-</div>
+    {{template "header.html" .}}
+    <div id="section">
+        {{.LayoutContent}}
+    </div>
+    {{template "footer.html" .}}
 </body>
 </html>

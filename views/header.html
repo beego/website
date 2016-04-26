@@ -1,0 +1,10 @@
+<!-- navigator -->
+<nav id="nav" class="navbar navbar-dark bg-inverse">
+    <ul class="nav navbar-nav">
+        {{range .HomeNav}}
+        <li class="nav-item">
+            <a href="{{.URL}}" class="{{.I18n}} nav-link">{{$.I18n.Tr .I18n}}</a>
+        </li>
+        {{end}}
+    </ul>
+</nav>

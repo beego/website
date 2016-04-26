@@ -5,5 +5,5 @@ type IndexController struct {
 }
 
 func (ic *IndexController) Get() {
-	ic.Layout = "layout_index.html"
+	ic.Layout = "layout.html"
 }
