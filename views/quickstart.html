@@ -1,10 +1,4 @@
-{{template "header" .}}
-
-{{if eq .Lang "en-US"}}
-{{template "en-US/quickstart.html"}}
-{{end}}
-{{if eq .Lang "zh-CN"}}
-{{template "zh-CN/quickstart.html"}}
-{{end}}
-
-{{template "footer" .}}
+<div id="quick-start" class="container">
+    {{if eq .Lang "en-US"}} {{template "en-US/quickstart.html"}} {{end}} 
+    {{if eq .Lang "zh-CN"}} {{template "zh-CN/quickstart.html"}} {{end}}
+</div>

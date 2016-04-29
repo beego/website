@@ -1,10 +1,19 @@
-<!-- navigator -->
-<nav id="nav" class="navbar navbar-dark bg-inverse">
-    <ul class="nav navbar-nav">
-        {{range .HomeNav}}
-        <li class="nav-item">
-            <a href="{{.URL}}" class="{{.I18n}} nav-link">{{$.I18n.Tr .I18n}}</a>
-        </li>
+<header id="header" class="container-fluid bg-inverse">
+    <!-- navigator -->
+    <nav id="nav" class="navbar navbar-dark bg-inverse">
+        {{if ne .Type "index"}}
+        <ul class="nav navbar-nav pull-left">
+            <li class="nav-item" id="nav-beego-logo">
+                <a href="/"><img src="/static/img/beego_purple.png" alt="beego-purple"></a>
+            </li>
+        </ul>
         {{end}}
-    </ul>
-</nav>
+        <ul class="nav navbar-nav{{if ne .Type `index`}} pull-right{{end}}">
+            {{range .HomeNav}}
+            <li class="nav-item">
+                <a href="{{.URL}}" class="{{.I18n}} nav-link">{{$.I18n.Tr .I18n}}</a>
+            </li>
+            {{end}}
+        </ul>
+    </nav>
+</header>

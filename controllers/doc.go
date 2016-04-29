@@ -2,12 +2,13 @@ package controllers
 
 import (
 	"bytes"
-	"github.com/russross/blackfriday"
 	"html/template"
 	"io/ioutil"
 	"net/http"
 	"path/filepath"
 	"strings"
+
+	"github.com/russross/blackfriday"
 )
 
 type DocController struct {
@@ -18,6 +19,7 @@ type DocController struct {
 
 func (dc *DocController) Prepare() {
 	dc.BaseController.Prepare()
+	dc.Data["Type"] = "doc"
 
 	// get correct file in doc directory
 	p := dc.Ctx.Request.URL.Path

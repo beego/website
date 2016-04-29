@@ -43,6 +43,7 @@ func (bc *BaseController) Prepare() {
 	bc.Data["Title"] = "Beego Website"
 	bc.Data["HomeNav"] = models.HomeNav
 	bc.Data["DocNav"] = models.DocNav
+	bc.Data["Type"] = "page"
 }
 
 func (bc *BaseController) setProperTemplateFile() {

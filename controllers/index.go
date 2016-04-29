@@ -5,5 +5,6 @@ type IndexController struct {
 }
 
 func (ic *IndexController) Get() {
-	ic.Layout = "layout.html"
+	ic.Data["Title"] = "beego website"
+	ic.Data["Type"] = "index"
 }

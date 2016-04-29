@@ -791,6 +791,11 @@ pre code {
     line-height: 1;
 }
 
+#nav{
+    max-width: 1170px;
+    margin: auto;
+}
+
 #section {
     height: 100%;
 }
@@ -843,16 +848,21 @@ pre code {
     padding: 0;
 }
 
-#nav .navbar-nav .nav-item {
+#nav .navbar-nav .nav-item{
     display: inline-block;
     float: none;
 }
+
 
 #nav .navbar-nav .nav-link{
     color: #EEE;
     line-height: 80px;
     font-size: 1.05rem;
     padding: 0 .5rem;
+}
+
+#nav-beego-logo img{
+    margin-top: -8px;
 }
 
 

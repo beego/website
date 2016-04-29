@@ -1,8 +1,9 @@
 package controllers
 
 import (
-	"github.com/beego/website/models"
 	"strings"
+
+	"github.com/beego/website/models"
 )
 
 type VideoController struct {
@@ -10,5 +11,6 @@ type VideoController struct {
 }
 
 func (vc *VideoController) Get() {
+	vc.Data["Type"] = "video"
 	vc.Data["Video"] = models.Videos[strings.ToLower(vc.Lang)]
 }

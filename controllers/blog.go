@@ -16,6 +16,7 @@ type BlogController struct {
 
 func (bc *BlogController) Prepare() {
 	bc.BaseController.Prepare()
+	bc.Data["Type"] = "blog"
 
 	// get correct file in beeblog directory
 	p := bc.Ctx.Request.URL.Path
