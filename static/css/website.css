@@ -982,6 +982,27 @@ pre code.go {
 }
 /* #users-container -- end -- */
 
+/* #video */
+
+#video{
+    line-height: 3rem;
+    margin: 2rem auto;
+}
+
+#video-title{
+    margin-bottom: 2rem;
+}
+
+#video-list li {
+    display: inline-block;
+    max-width: 45%;
+    margin: 1rem;
+}
+
+#video-list .title{
+    margin-bottom: 1rem;
+}
+
 
 .feature-container h6 {
     margin-top: 14px;
