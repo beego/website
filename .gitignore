@@ -5,6 +5,7 @@
 
 # Folders
 .vscode
+dest
 _obj
 _test
 _cache

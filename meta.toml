@@ -1,0 +1,108 @@
+[meta]
+# site title, show in <title>
+title = "Beego"
+
+# subtitle, words after title, in description
+subtitle = "简约 & 强大并存的 Go 应用框架"
+
+# print in html <meta>
+keyword = "beego,golang,web,framework"
+
+# print in html <meta>
+desc = "简约 &amp; 强大并存的 Go 应用框架"
+
+# build links for feed, sitemap
+domain = "localhost"
+
+# root path for site# if empty, build as http://{domain}/
+root = "http://localhost:9899/"
+
+# cover page for homepage
+cover = "@media/cover.jpg"
+
+# global language,
+# its used in global posts and themes, unless pages set lang
+lang = "en"
+
+
+[[nav]]
+link = "/"
+title = "Home"
+i18n = "home"
+# set nav to active status
+hover = "index"
+blank = false
+
+[[nav]]
+link = "/guide.html"
+title = "Guide"
+i18n = "guide"
+hover = "guide"
+
+[[nav]]
+link = "/community.html"
+title = "Community"
+i18n = "community"
+hover = "community"
+
+[[nav]]
+link = "/docs.html"
+title = "Docs"
+i18n = "docs"
+hover = "docs"
+
+[[nav]]
+link = "/video.html"
+title = "Video"
+i18n = "video"
+hover = "video"
+
+[[nav]]
+link = "/products.html"
+title = "Products"
+i18n = "products"
+hover = "products"
+
+[[nav]]
+link = "/blog.html"
+title = "Blog"
+i18n = "blog"
+hover = "blog"
+
+
+[[author]]
+name = "pugo"
+email = ""
+url = "http://pugo.io"
+avatar = "@media/author.png"
+bio = "the robot of pugo, who generates all default contents."
+
+# comment settings
+# please only set one value
+# if multi values, it prints all comment iframes
+[comment]
+# disqus site name
+disqus = ""
+# duoshuo short name
+duoshuo = ""
+
+# analytics settings
+# please only set one value
+# if multi values, it prints all analytics codes
+[analytics]
+# google analytics, need as UA-XXXXX-Y
+google = ""
+# baidu analytics, need hash-code in hm.js?hash-code
+baidu = ""
+
+[build]
+# disable_post disable to read & compile post data
+disable_post = false
+# disable_page disable to read & compile page data
+disable_page = false
+# post_dir set posts directory
+post_dir = "post"
+# page_dir set pages directory
+page_dir = "page"
+# media dir set media directory, based on source directory
+media_dir = "media"

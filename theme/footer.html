@@ -1,0 +1,18 @@
+<footer id="footer">
+    <div class="container text-center">
+        <p>Copyright © 2012-2014 Beego Under the apache 2.0 licence. Logo designed by Tengfei.</p>
+        <p>Powered by <a href="https://github.com/go-xiaohei/pugo">PuGo {{.Version}}</a>. Theme by Default.
+        </p>
+        {{template "embed/analytics.html" .}}
+    </div>
+</footer>
+<script src="{{.Base}}/js/jquery-2.1.4.min.js"></script>
+<script src="{{.Base}}/js/bootstrap.min.js"></script>
+<script src="{{.Base}}/js/prism.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("pre code").addClass("line-numbers")
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# navigation
+[nav]
+home = "Home"
+guide = "Guide"
+community = "Community"
+docs = "Docs"
+video = "Video"
+products = "Products"
+blog = "Blog"
+
+# about post
+[post]
+list = "All Posts"
+archive = "Archives"
+tag = "Tags"
+readmore = "Read More"
+
+# about pagination
+[pager]
+prev = "Prev"
+next = "Next"
