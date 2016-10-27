@@ -1,9 +1,12 @@
 # navigation
 [nav]
-home = "文章"
-archive = "归档"
-about = "关于"
-source = "代码"
+home = "首页"
+guide = "快速入门"
+community = "开发社区"
+docs = "开发文档"
+video = "开发视频"
+products = "产品案例"
+blog = "博客"
 
 # about post
 [post]

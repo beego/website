@@ -12,6 +12,10 @@ body {
     background-color: #FCFCFC;
 }
 
+pre[class*="language-"]:after{
+    display: none !important;
+}
+
 #nav.bg-inverse {
     background-color: #161616 !important;
 }
@@ -51,6 +55,29 @@ body {
     padding: 8px 24px 8px 0;
 }
 
-#index-feature .feature-item{
+#index-feature .feature-item {
     padding-top: 12px;
+}
+
+#article-single h3.title {
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+}
+
+#article-single .brief h1 {
+    font-size: 1.6rem
+}
+
+#article-single .brief h2 {
+    font-size: 1.5rem
+}
+
+#article-single .brief h3 {
+    font-size: 1.4rem
+}
+
+#article-single .brief h1,#article-single .brief h2,#article-single .brief h3{
+    border-left: 4px solid #1796db;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
 }
