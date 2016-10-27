@@ -8,10 +8,12 @@
 </footer>
 <script src="{{.Base}}/js/jquery-2.1.4.min.js"></script>
 <script src="{{.Base}}/js/bootstrap.min.js"></script>
-<script src="{{.Base}}/js/prism.min.js"></script>
+<script src="{{.Base}}/js/highlight.pack.js"></script>
 <script>
-    $(document).ready(function () {
-        $("pre code").addClass("line-numbers")
+    $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
     });
 </script>
 </body>

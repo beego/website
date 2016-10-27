@@ -7,12 +7,19 @@ pre code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', "Microsoft Yahei", Helvetica, Arial, sans-serif;
 }
 
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+
 body {
     /*background: url("../img/bg.jpg") no-repeat top center;*/
     background-color: #FCFCFC;
 }
 
-pre[class*="language-"]:after{
+pre[class*="language-"]:after {
     display: none !important;
 }
 
@@ -76,8 +83,11 @@ pre[class*="language-"]:after{
     font-size: 1.4rem
 }
 
-#article-single .brief h1,#article-single .brief h2,#article-single .brief h3{
+#article-single .brief h1,
+#article-single .brief h2,
+#article-single .brief h3 {
     border-left: 4px solid #1796db;
     padding-left: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem
 }
