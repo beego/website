@@ -91,3 +91,32 @@ pre[class*="language-"]:after {
     margin-bottom: 1.5rem;
     margin-top: 1rem
 }
+
+#doc-navs,
+#doc-navs ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 2rem;
+}
+
+#doc-navs ul {
+    font-size: 1rem;
+    padding-left: 1rem
+}
+
+#doc-navs {
+    padding-top: 1rem;
+}
+
+#doc-navs> li {
+    font-size: 1.1rem;
+}
+
+#doc-navs .node {
+    margin-top: 1rem;
+}
+
+#doc-navs .node> span {
+    border-left: 4px solid #CCC;
+    padding-left: 1rem;
+}

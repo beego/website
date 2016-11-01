@@ -7,12 +7,30 @@
             <div id="article-single">
                 <article class="article">
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1 panel panel-default">
-                            <header class="header">
-                                <h3 class="title">
-                                <a href="{{.Page.URL}}">{{.Page.Title}}</a>
-                            </h3>
-                            </header>
+                        <div class="col-md-2 panel panel-default">
+                            <ul id="doc-navs">
+                                {{range .Tree.Pages (print .Lang "/docs/intro")}}
+                                <li><a href="{{.FullURL}}">{{.Title}}</a></li>
+                                {{end}}
+                                <li class="node">{{with .Tree.Child (print .Lang "/docs/install")}}
+                                    <span>{{.Title}}</span> {{end}}
+                                    <ul>
+                                        {{range .Tree.Pages (print .Lang "/docs/install")}}
+                                        <li><a href="{{.FullURL}}">{{.Title}}</a></li>
+                                        {{end}}
+                                    </ul>
+                                </li>
+                                <li class="node">{{with .Tree.Child (print .Lang "/docs/quickstart")}}
+                                    <span>{{.Title}}</span> {{end}}
+                                    <ul>
+                                        {{range .Tree.Pages (print .Lang "/docs/quickstart")}}
+                                        <li><a href="{{.FullURL}}">{{.Title}}</a></li>
+                                        {{end}}
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10 panel panel-default">
                             {{if .Page.Author}}
                             <aside class="aside clearfix">
                                 <a class="stat label label-default pull-right" {{if .Page.Author.URL}} href="{{.Page.Author.URL}}" target="_blank" {{end}}>{{.Page.Author.Name}}</a>
