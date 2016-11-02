@@ -101,7 +101,8 @@ pre[class*="language-"]:after {
 
 #doc-navs ul {
     font-size: 1rem;
-    padding-left: 1rem
+    padding-left: 1rem;
+    margin-bottom: 1rem
 }
 
 #doc-navs {

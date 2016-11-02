@@ -1,27 +1,18 @@
 # website
 beego website
 
+use `pugo` to create static website
 
-### Setup
-
-1. Get source code:
-
-```
-go get github.com/beego/website
-```
-
-2. Get `beedoc` and `beeblog` to build contents:
+#### get pugo
 
 ```
-cd $GOPATH/src/github.com/beego/website
-git clone https://github.com/beego/beedoc
-git clone https://github.com/beego/beeblog
+go get github.com/go-xiaohei/pugo
 ```
 
-3. Compile:
+use master branch now
+
+#### run 
 
 ```
-go build main.go
+./pugo server --source="./" --theme="theme" [--debug]
 ```
-
-run `website` and visit `http://localhost:8082`

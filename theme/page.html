@@ -28,6 +28,17 @@
                                         {{end}}
                                     </ul>
                                 </li>
+                                {{range .Tree.Children (print .Lang "/docs/mvc")}}{{if eq .Type "page-node"}}
+                                <li class="node"><span>{{.Title}}</span>
+                                    <ul>
+                                        {{range $.Tree.Pages (print $.Lang "/docs/mvc/" .Link)}}
+                                        <li><a href="{{.FullURL}}">{{.Title}}</a></li>
+                                        {{end}}
+                                    </ul>
+                                </li>
+                                {{else}}
+                                <li><a href="{{.FullURL}}">{{.Title}}</a></li>
+                                {{end}} {{end}}
                             </ul>
                         </div>
                         <div class="col-md-10 panel panel-default">
