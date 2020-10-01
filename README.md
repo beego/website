@@ -7,7 +7,7 @@ beego website
 1. Get source code:
 
 ```
-go get github.com/beego/website
+go get github.com.beego.website
 ```
 
 2. Get `beedoc` and `beeblog` to build contents:
