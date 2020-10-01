@@ -1,5 +1,4 @@
-# website
-beego website
+# Website : An Amazing Website
 
 
 ### Setup
