@@ -1,5 +1,5 @@
 # website
-beego website
+beego - An Amazing Website
 
 
 ### Setup
