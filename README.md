@@ -24,4 +24,13 @@ git clone https://github.com/beego/beeblog
 go build main.go
 ```
 
+
+4.For run the node 
+````
+
+sudo npm start
+
+
+````
+
 run `website` and visit `http://localhost:8082`
