@@ -1,5 +1,5 @@
-# website
-beego website
+#website
+Beego website
 
 
 ### Setup
@@ -7,7 +7,7 @@ beego website
 1. Get source code:
 
 ```
-go get github.com/beego/website
+Go get github.com/beego/website
 ```
 
 2. Get `beedoc` and `beeblog` to build contents:
@@ -21,7 +21,7 @@ git clone https://github.com/beego/beeblog
 3. Compile:
 
 ```
-go build main.go
+Go build main.go
 ```
 
 run `website` and visit `http://localhost:8082`
