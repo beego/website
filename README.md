@@ -1,5 +1,5 @@
 # website
-beego website
+The beego website
 
 
 ### Setup
