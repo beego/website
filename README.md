@@ -1,10 +1,10 @@
-# website
+# website 
 beego website
 
 
 ### Setup
 
-1. Get source code:
+1. Get source code from shown in below links:
 
 ```
 go get github.com/beego/website
