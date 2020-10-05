@@ -1,5 +1,5 @@
-# website
-beego website
+# WEBSITE
+Beego WEbsite
 
 
 ### Setup
@@ -7,7 +7,7 @@ beego website
 1. Get source code:
 
 ```
-go get github.com/beego/website
+Go get github.com/beego/website
 ```
 
 2. Get `beedoc` and `beeblog` to build contents:
