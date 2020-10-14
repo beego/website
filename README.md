@@ -1,10 +1,10 @@
-# website
-beego website
+# Website
+Beego Website
 
 
 ### Setup
 
-1. Get source code:
+1. Get Source Code:
 
 ```
 go get github.com/beego/website
