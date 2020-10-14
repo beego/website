@@ -1,8 +1,8 @@
-# website
+# website name
 beego website
 
 
-### Setup
+### Steps to follow
 
 1. Get source code:
 
@@ -25,3 +25,5 @@ go build main.go
 ```
 
 run `website` and visit `http://localhost:8082`
+
+you're at main website.
