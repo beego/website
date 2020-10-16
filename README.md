@@ -1,8 +1,8 @@
-# website
+# WEBSITE
 beego website
 
 
-### Setup
+### STARTUP
 
 1. Get source code:
 
